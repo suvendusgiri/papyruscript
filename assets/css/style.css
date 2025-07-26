@@ -1,17 +1,23 @@
-.btn{
+.btn {
     background-color: #5C9A61;
 }
 
-.ptb{
+.ptb {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.green-bg{
+.green-bg {
     background-color: #5C9A61;
     color: white;
 }
 
-.button-green{
-    color: #5C9A61 ;
+.button-green {
+    color: #5C9A61;
+}
+
+/* modal */
+.modal-content {
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
 }

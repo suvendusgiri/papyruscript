@@ -22,7 +22,8 @@
                         <h1 class="fw-bold">Need a Research Proposal That Gets Approved?</h1>
                         <p class="">No more struggling with structure, jargon, or unclear objectives. We craft winning
                             research proposals that grab attention—and funding.</p>
-                        <div><button class="btn btn-primary mt-5 border-0 px-3 py-2">Download Free Tips </button>
+                        <div><button class="btn btn-primary mt-5 border-0 px-3 py-2" data-bs-toggle="modal"
+  data-bs-target="#leadMagnetModal">Download Free Tips </button>
                             <p>5 Reasons Research Proposals Get Rejected</p>
                         </div>
                     </div>
@@ -111,6 +112,53 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pnE8UQ6w7JJdiU9Cvm1E2a3UJc6jAi9FVFz5E+AhBEmHzQ8M9vV3VJeQQaeS3T6o"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Lead Magnet Modal -->
+<div class="modal fade" id="leadMagnetModal" tabindex="-1" aria-labelledby="leadMagnetModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0">
+        <div>
+          <h5 class="modal-title" id="leadMagnetModalLabel">Get Your Free Guide</h5>
+          <div class="text-muted small">5 Reasons Research Proposals Get Rejected</div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-3">
+          Enter your details below and we’ll send you a free PDF booklet with essential tips for successful research proposals.
+        </p>
+        <form id="leadMagnetForm">
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="nameInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="your@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phoneInput" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneInput" pattern="[0-9+\s\-]+" maxlength="15" placeholder="e.g. +91 9876543210" required>
+          </div>
+          <div class="mb-3">
+            <label for="orgInput" class="form-label">Institution/Organization <span class="text-muted small">(optional)</span></label>
+            <input type="text" class="form-control" id="orgInput" placeholder="University, Hospital, etc.">
+          </div>
+          <!-- Consent Checkbox -->
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="consentCheckbox" required>
+    <label class="form-check-label text-muted small" for="consentCheckbox">
+      I agree to receive this and occasional emails from Papyruscript.
+    </label>
+  </div>
+          <button type="submit" class="btn btn-primary w-100">Send Me the PDF</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
