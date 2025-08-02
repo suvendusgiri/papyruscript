@@ -3,10 +3,37 @@ body {
     background-color: #F9F9F9;
 }
 
+@media screen and (min-width: 1400px) {
+    .container .custom-container {
+        max-width: 1100px;
+    }
+}
+
+/* @media screen and (min-width: 1200px) {
+    .container .custom-container {
+        max-width: 1060px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container .custom-container {
+        max-width: 1050px;
+    }
+} */
 
 
 .btn {
     background-color: #5C9A61;
+    color: white;
+        font-weight: 600;
+
+}
+
+.btn:hover {
+    border: 2px solid#4d8f62;
+    background-color: transparent;
+    color: #4d8f62;
+    font-weight: 600;
 }
 
 .ptb {
@@ -60,7 +87,7 @@ body {
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
-    min-width: 240px;
+    min-width: 216px;
 }
 
 .card h3 {
@@ -300,4 +327,61 @@ body {
 .modal-content {
     border-radius: 1.5rem;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.checkmark {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.modal-box h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.modal-box .bold {
+  font-weight: 700;
+  color: #000;
+}
+
+.modal-box .green {
+  font-weight: 700;
+  color: #4caf50;
+}
+
+.modal-box .message {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.modal-box .follow {
+  margin-top: 10px;
+  font-weight: 500;
 }
