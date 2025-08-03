@@ -3,10 +3,37 @@ body {
     background-color: #F9F9F9;
 }
 
+@media screen and (min-width: 1400px) {
+    .container .custom-container {
+        max-width: 1100px;
+    }
+}
+
+/* @media screen and (min-width: 1200px) {
+    .container .custom-container {
+        max-width: 1060px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container .custom-container {
+        max-width: 1050px;
+    }
+} */
 
 
 .btn {
     background-color: #5C9A61;
+    color: white;
+        font-weight: 600;
+
+}
+
+.btn:hover {
+    border: 2px solid#4d8f62;
+    background-color: transparent;
+    color: #4d8f62;
+    font-weight: 600;
 }
 
 .ptb {
@@ -60,7 +87,7 @@ body {
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
-    min-width: 240px;
+    min-width: 216px;
 }
 
 .card h3 {
