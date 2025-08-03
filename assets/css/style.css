@@ -301,3 +301,19 @@ body {
     border-radius: 1.5rem;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
 }
+
+.what-you-get-section {
+    background-color: #EEF8EF;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #4a9153;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
